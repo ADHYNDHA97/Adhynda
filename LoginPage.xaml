@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Adhynda.LoginPage"
+             BackgroundColor="#ff99cc"
+             Title="LoginPage">
+
+    <VerticalStackLayout Spacing="0"
+                         Padding="30,0"
+                         VerticalOptions="Center">
+        <Image HeightRequest="150" WidthRequest="150"
+               Source="icon.jpg" />
+
+        <VerticalStackLayout Spacing="2" Padding="2">
+            <Label FontFamily="Sitka" FontSize="Title"  FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   Text="Welcome!" TextColor="Black"/>
+            <Label FontFamily="OpenSansBold" FontSize="Subtitle"  FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"
+                   Text="Login To Continue The Wonderfull Event" TextColor="Black"/>
+            <StackLayout Padding="5" Margin="-5,5,5,-5" VerticalOptions="Center">
+                <Label FontFamily="Sitka" FontAttributes="Bold" FontSize="15"
+                Text="Email" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" HeightRequest="60" WidthRequest="60" 
+                   CornerRadius="30" 
+                  BorderColor="#ff0066">
+                    <Image Source="email.jpg" 
+                           HeightRequest="20" WidthRequest="20"/>
+                </Frame>
+                <Frame  HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" 
+                   HorizontalOptions="FillAndExpand"
+                    BorderColor="#ff0066">
+                    <Entry  Margin="20,0,0,0" VerticalOptions="Center"  
+                       Keyboard="Email"
+                       Placeholder="Email@gmail.com"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="5" Margin="-5,5,5,-5" VerticalOptions="Center">
+                <Label FontFamily="Sitka" FontAttributes="Bold" FontSize="15"
+                Text="Password" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" HeightRequest="60" WidthRequest="60" 
+                   CornerRadius="30" 
+                   BorderColor="#ff0066">
+                    <Image HorizontalOptions="FillAndExpand" Source="lock2.jpg" 
+                           HeightRequest="20" WidthRequest="20"/>
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" 
+                   HorizontalOptions="FillAndExpand"
+                   BorderColor="#ff0066">
+                    <Entry  Margin="20,0,0,0" VerticalOptions="Center"  
+                       Keyboard="Email"
+                        IsPassword="True"
+                       Placeholder="***"/>
+                </Frame>
+            </StackLayout>
+            <Button FontFamily="OpenSansBold" Text="Sign In"  WidthRequest="150" CornerRadius="20" HorizontalOptions="Center"
+                BackgroundColor="#cc0066"/>
+            <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+                <Label FontFamily="Sitka" FontAttributes="Bold" 
+                   Text="Dont Have Account?" TextColor="Black"/>
+                <Label FontFamily="Sitka" FontAttributes="Bold"
+                   Text="Sign Up Here" TextColor="Blue">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                    
+                </Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Spacing="5" HorizontalOptions="Center">
+
+                <Label FontFamily="Sitka" FontAttributes="Bold" 
+                   Text="Or Login With" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="4">
+                <Image Source="fb.jpg" 
+                           HeightRequest="30" WidthRequest="30"/>
+                <Image Source="gmail.jpg" 
+                           HeightRequest="35" WidthRequest="35"/>
+            </StackLayout>
+
+
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+        
+        
+</ContentPage>
